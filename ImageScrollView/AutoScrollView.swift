@@ -106,7 +106,7 @@ class AutoScrollView: UIView {
             scrollView.contentOffset.x = width
             page = 0
         } else {
-            scrollView.contentOffset.x = width * CGFloat(page + 1)
+            self.scrollView.contentOffset.x = self.width * CGFloat(page + 1)
         }
         
         pageCtrl.currentPage = page
